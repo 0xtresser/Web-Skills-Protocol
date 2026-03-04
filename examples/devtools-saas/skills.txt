@@ -1,0 +1,15 @@
+# DevTools Cloud
+
+> Cloud deployment platform for web applications. Deploy from Git in seconds. Supports Node.js, Python, Go, and Rust.
+
+Authentication via OAuth 2.0. Register at https://devtools.cloud/developers to obtain client credentials.
+
+## Skills
+
+- [Deploy Application](/skills/deploy/SKILL.md): Deploy web applications from Git repositories with automatic build detection and zero-downtime deployment.
+- [Manage Domains](/skills/domains/SKILL.md): Add custom domains, configure DNS, and manage SSL certificates for deployed applications.
+- [View Logs](/skills/logs/SKILL.md): Stream application logs, filter by severity, and search log history.
+
+## Optional
+
+- [Team Management](/skills/teams/SKILL.md): Invite team members, manage roles, and configure access permissions.

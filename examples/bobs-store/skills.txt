@@ -1,0 +1,16 @@
+# Bob's Online Store
+
+> Online store for electronics, gadgets, and accessories.
+
+Product search is open (no auth required). All other endpoints require an API key. Get one at https://bobs-store.com/developers.
+Rate limits: Search API allows 100 req/min (agents: 30/min recommended). Orders API allows 20 req/min (agents: 5/min recommended). See each skill for details.
+
+## Skills
+
+- [Product Search](/skills/search/SKILL.md): Search and browse products by keyword, category, price range, or brand. Returns structured product data including prices, ratings, and availability.
+- [Place Order](/skills/order/SKILL.md): Add items to cart, apply coupons, select shipping method, and complete checkout via API.
+
+## Optional
+
+- [Product Reviews](/skills/reviews/SKILL.md): Read and submit product reviews and ratings.
+- [Wishlist](/skills/wishlist/SKILL.md): Manage user wishlists.
