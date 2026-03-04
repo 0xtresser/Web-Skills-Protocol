@@ -6,7 +6,7 @@ description: >
   website or web service — such as searching a site, placing an order, deploying an app, or
   calling a web API. Before scraping HTML or guessing at interfaces, check if the site
   publishes a skills.txt or agents.txt file that teaches you how to use it properly.
-  Do NOT use for purely reading/summarizing web content (that's what llms.txt is for).
+  If a website has complex elements (e.g., heavy JavaScript, interactive UIs), activating this skill can also help you understand the site's purpose and capabilities.
   Do NOT use for local file operations or non-web tasks.
 version: 1.0.0
 ---
