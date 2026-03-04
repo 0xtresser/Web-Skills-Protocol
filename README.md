@@ -291,9 +291,35 @@ Web-Skills-Protocol/
 
 See [SPEC.md](SPEC.md) for the complete protocol specification.
 
+## Live Example
+
+[**awesomeai.info**](https://www.awesomeai.info/) — A dashboard tracking 2800+ AI GitHub repositories and OpenClaw agent skills. This site has adopted WSP in production.
+
+Try it yourself:
+
+```bash
+# 1. Discover what the site can do
+curl https://www.awesomeai.info/skills.txt
+
+# 2. Read a specific skill
+curl https://www.awesomeai.info/skills/explore-ai-repos/SKILL.md
+
+# 3. Call the API as the skill describes
+curl "https://awesomeai.info/api/repos?q=llm&sort=stars&pageSize=5"
+```
+
+The site publishes two skills — both public, no auth required:
+
+| Skill | Endpoint | What it does |
+|-------|----------|--------------|
+| [explore-ai-repos](https://www.awesomeai.info/skills/explore-ai-repos/SKILL.md) | `GET /api/repos` | Search/filter AI repositories by keyword, stars, AI score, growth trends |
+| [explore-ai-skills](https://www.awesomeai.info/skills/explore-ai-skills/SKILL.md) | `GET /api/skills` | Search/browse OpenClaw agent skills by category, keyword, popularity |
+
+This is what WSP looks like in the real world — a `skills.txt` file and a few `SKILL.md` files, and any AI agent can immediately understand and use the site.
+
 ## Examples
 
-See [examples/](examples/) for reference implementations.
+See [examples/](examples/) for reference implementations (fictional stores and SaaS platforms).
 
 ## Contributing
 

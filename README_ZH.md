@@ -290,9 +290,35 @@ Web-Skills-Protocol/
 
 完整协议规范请参阅 [SPEC.md](SPEC.md)。
 
+## 实际案例
+
+[**awesomeai.info**](https://www.awesomeai.info/) — 追踪 2800+ 个 AI 相关 GitHub 仓库和 OpenClaw 智能体技能的数据看板。该网站已在生产环境采用 WSP。
+
+亲自试试：
+
+```bash
+# 1. 发现网站能做什么
+curl https://www.awesomeai.info/skills.txt
+
+# 2. 查看具体技能
+curl https://www.awesomeai.info/skills/explore-ai-repos/SKILL.md
+
+# 3. 按照技能描述调用 API
+curl "https://awesomeai.info/api/repos?q=llm&sort=stars&pageSize=5"
+```
+
+该网站发布了两个技能——均为公开接口，无需认证：
+
+| 技能 | 接口 | 功能 |
+|------|------|------|
+| [explore-ai-repos](https://www.awesomeai.info/skills/explore-ai-repos/SKILL.md) | `GET /api/repos` | 按关键词、star 数、AI 评分、增长趋势搜索/筛选 AI 仓库 |
+| [explore-ai-skills](https://www.awesomeai.info/skills/explore-ai-skills/SKILL.md) | `GET /api/skills` | 按分类、关键词、热度搜索/浏览 OpenClaw 智能体技能 |
+
+这就是 WSP 在真实世界中的样子——一个 `skills.txt` 文件加几个 `SKILL.md`，任何 AI 智能体就能立即理解和使用这个网站。
+
 ## 示例
 
-参考实现请查看 [examples/](examples/) 目录。
+虚拟示例（电商和 SaaS 平台）请查看 [examples/](examples/) 目录。
 
 ## 参与贡献
 
