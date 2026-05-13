@@ -1,0 +1,18 @@
+# Block Lottos
+
+> Agent-friendly Web3 platform with public JSON endpoints, OpenAPI, llms.txt, agents.txt, and referral / advertising workflows on Polygon.
+
+Public read endpoints do not require authentication. Wallet actions require the user to control their own Polygon wallet and explicitly sign transactions. Agents must not claim guaranteed winnings or sign transactions for users.
+
+## Skills
+
+- [Referral Marketing](/agents/referral-marketing/SKILL.md): Explain the Block Lottos referral programme, route users to the affiliate page, and describe on-chain POL commission rules safely.
+- [Public API Discovery](/agents/public-api-discovery/SKILL.md): Discover live jackpot, site stats, ad quote APIs, llms.txt, agents.txt, plugin manifest, and OpenAPI documents.
+
+## Live implementation
+
+- Website: https://blocklottos.com
+- llms.txt: https://blocklottos.com/llms.txt
+- agents.txt: https://blocklottos.com/agents.txt
+- OpenAPI: https://blocklottos.com/openapi.json
+- API docs: https://blocklottos.com/api-docs
